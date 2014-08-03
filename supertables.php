@@ -28,10 +28,10 @@ function table($num1, $num2)
         $i=fgets(STDIN);
         
         global $n ;
-        $r = $i.explode(" ", $i);
+        $r = explode(" ", $i);
         $a = $r[0];
-        $b = $r[2];
-        $n = $r[4];
+        $b = $r[1];
+        $n = $r[2];
      $A = table($a, $n);
      $B = table($b, $n);
      $unique = array_unique(array_merge($A,$B)); 
